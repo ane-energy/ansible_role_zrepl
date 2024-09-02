@@ -1,2 +1,4 @@
 ---
-__fqcn_apt_role__: sploenix.base.apt
+__fqcn_pkg_role__: ane.base.apt
+__packages_present_zrepl__:
+  - zrepl

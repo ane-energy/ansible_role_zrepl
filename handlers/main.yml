@@ -1,6 +1,8 @@
 ---
 - name: "Restart zrepl"
+  become: true
   ansible.builtin.systemd:
     name: zrepl
     enabled: true
     state: restarted
+  ignore_errors: "{{ ansible_check_mode }}"
